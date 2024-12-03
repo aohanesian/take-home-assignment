@@ -1,0 +1,54 @@
+.visually_hidden {
+    display: none;
+}
+
+.search_container {
+    margin-top: 12px;
+}
+
+.search_container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .search_container form {
+        flex-direction: row;
+    }
+}
+
+
+.search_container input,
+.search_button {
+    display: block;
+}
+
+.search_container input {
+    padding: 8px;
+    width: 200px;
+}
+
+.search_button {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search_button:disabled {
+    cursor: not-allowed;
+    background-color: #cccccc;
+}
+
+.search_button:not(:disabled):hover {
+    filter: brightness(130%);
+}
+
+.search_button:not(:disabled):active {
+    filter: brightness(150%);
+}
