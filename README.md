@@ -1,4 +1,4 @@
-# Take home assigment 
+# Take home assignment 
 
 # Key bullet points:
 
